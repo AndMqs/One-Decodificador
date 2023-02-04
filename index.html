@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="topo-site">
+                <label for="text">Challenge Decodificador</label>
+                <img src="img/logo.png">                
+            </div>
+            <div>
+                <h1 class="texto-principal"> Decodificador de Textos</h1>
+                <p class="descricao">Quer descobrir a mensagem secreta ou criptografar uma?<br> 
+                    Utilize os campos abaixo para escrever a mensagem e depois clique na função desejada.</p>               
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="caixas">
+                <section class="caixa-entrada"> 
+				    <textarea cols="45" rows="15" id="entrada" class="txts" required placeholder="Digite seu texto aqui!"></textarea>
+                
+                    <div>
+                        <button onclick="criptografar()" class="btns">Criptografar</button>
+                        <button onclick="descriptografar()"  class="btns">Descriptografar</button>
+                        <button onclick="limpar()" class="btns">Limpar</button>
+                    </div>
+
+                   <img src="img/Vector.png" alt="Atenção!"><label>Apenas letras minúsculas e sem acento.</label>
+                </section>
+
+                <section class="caixa-saida">
+                    <textarea cols="45" rows="15" id="saida" required placeholder="Nenhuma mensagem encontrada.&#10Digite o texto que deseja criptografar ou descriptografar." readonly></textarea>
+                    
+                    <div>
+                        <button onclick="copiar()" class="btns-copiar">Copiar</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="tecnologias">
+                    <ul>
+                        <p id="titulo-tec">Tecnologias utilizadas neste desafio</p>
+                        <li id="tecs"><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
+                        <li id="tecs"><i class="fa-brands fa-css3-alt"></i><p>CSS3</p></li>
+                        <li id="tecs"><i class="fa-brands fa-js"></i><p>JavaScript</p></li>
+                    </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <nav class="social">
+                <a href="https://www.linkedin.com/in/andresa-marques-997539225/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a> 
+                <a href="https://github.com/AndMqs" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="javascript:void(0)" onclick="share()"><i class="fa-solid fa-square-share-nodes"></i></a>
+            </nav>
+
+            <p class="copyright">&copy; Copyright Andresa Marques - 2022</p>
+        </footer>
+
+    </body>
+    <script src="https://kit.fontawesome.com/6af20e2042.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer>
+        /* https://github.com/logica-programacion/Solucao-Challenge-Decodificador - Site para aperfeiçoar o código do projeto */
+    </script>
+</html>
+
